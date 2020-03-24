@@ -13,7 +13,9 @@ body {
 
 
 .hero {
+  display: flex;
   position: relative;
+  text-align: center;
 }
 
 .hero-overlay {
@@ -44,9 +46,7 @@ body {
 }
 
 .icon {
-  display: flex;
   position: relative;
-  margin: auto;
 }
 
 .icon {
@@ -195,17 +195,29 @@ a.animated-button.sandy-one:hover:after {
   font-size: 1.5rem;
 }
 
-.about {
+.section {
   border-bottom: 2px white solid;
 }
+
 
 h1 {
   color: rgb(221, 111, 7);
 }
 
+/* Bounce Hover Effects */
 .about-icon {
   padding: 20px;
   color: rgb(221, 111, 7);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  margin-bottom: 30px;
+}
+
+.about-icon:hover {
+  transform: scale(1.5);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 
 .box {
@@ -226,6 +238,16 @@ span.text {
   color: rgb(221, 111, 7);
 }
 
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  height: 60px;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
+
