@@ -139,7 +139,6 @@ a.animated-button:link:after, a.animated-button:visited:after {
 a.animated-button:link:hover, a.animated-button:visited:hover {
   color: #FFF;
   text-shadow: none;
-  padding: 25px;
 }
 a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
   height: 450%;
