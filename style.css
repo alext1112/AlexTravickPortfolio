@@ -212,6 +212,7 @@ h1 {
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
   margin-bottom: 30px;
+  z-index: 7;
 }
 
 .about-icon:hover {
@@ -231,6 +232,7 @@ h1 {
   padding: 2rem;
   background-color: rgb(221, 111, 7);
   color: black;
+  font-weight: 900;
 }
 
 span.text {
@@ -250,3 +252,14 @@ footer {
   display: none;
 }
 
+.audio-container {
+  position: fixed;
+  background: transparent;
+  z-index: 10;
+  opacity: .5;
+  margin: 10px;
+}
+
+audio:focus {
+  outline: 0;
+}
